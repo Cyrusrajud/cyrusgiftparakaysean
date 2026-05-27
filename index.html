@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUNO NG SAGING</title>
+  <style>
+    body {
+      background-color: #ffb6c1;
+      font-family: Arial, sans-serif;
+      text-align: center;
+  		background-image: url("ballerina.png");
+		background-repeat: repeat;
+ 	 background-size: auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+    }
+
+    h1 {
+      color: red;
+      font-size: 40px;
+    }
+
+    p {
+      color: purple;
+      font-size: 18px;
+    }
+
+    .product {
+      background-color: white;
+      border: 2px solid hotpink;
+      border-radius: 10px;
+      width: 90%;
+	  max-width: 200px;
+      padding: 15px;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .product h2 {
+      font-size: 20px;
+      color: hotpink;
+    }
+
+    .product p {
+      font-size: 16px;
+      color: gray;
+    }
+
+    .price {
+      color: red;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: hotpink;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+ <div class="navbar">
+    <h2> 👇CHIXOUT👇</h2>
+    <button class="cart-icon" onclick="alert('di ka makaka check out boiii kala mo ah baddinggggggg')">
+      🛒 Cart: <span id="cart-count">0</span>
+    </button>
+  </div>
+
+  <h1>🗿 SEAN BADING 🗿</h1>
+  <p>eto ka oh sean inend mo steak ( ° ͜ʖ͡°)╭∩╮</p>
+
+  <!-- Product 1 -->
+  <div class="product">
+    <h2>🌱 Sagingan 🍌</h2>
+    <p>paspas mo birada</p>
+    <div class="price">₱50</div>
+    <br>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product">
+    <h2>𐀪𐀪 Tunay na kaibigan</h2>
+    <p>Di mo to afford kasi peyk prend ka</p>
+    <div class="price">₱quazillionbozillion</div>
+    <br>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product">
+    <h2>12:12</h2>
+    <p>ekis sayo</p>
+    <div class="price">₱Who knows</div>
+    <br>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+   <script>
+    var count = 0;
+
+    function addToCart() {
+      count = count + 1;
+      document.getElementById("cart-count").innerText = count;
+    }
+  </script>
+
+</body>
+</html>
